@@ -16,6 +16,9 @@ Upload any pdf or website, and get high quality LLM evaluated MCQ questions with
 2. **Upstage Solar Embedding API** : To convert the text to embedding to be used in RAG portion of LLM as an evaluator
 3. **Upstage Chat API** : Used to generate answer from question (and thus used as evaluator LLM)
 
+## Technologies used
+Built using Upstage API, Langchain, Haystack, Gradio, Groq
+
 ## How to run it locally?
 
 ## To dos
