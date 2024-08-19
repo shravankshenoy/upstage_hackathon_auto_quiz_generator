@@ -20,11 +20,18 @@ Upload any pdf or website, and get high quality LLM evaluated MCQ questions with
 Built using Upstage API, Langchain, Haystack, Gradio, Groq
 
 ## How to run it locally?
+- Clone the repo
+- Run pip install -r requirements.txt (prerably in virtual environment)
+- Create .env file with 2 environment variables
+  - UPSTAGE_API_KEY
+  - GROQ_KEY
+- Run the webapp using: `python app.py` or `gradio app.py`
 
 ## To dos
 - [ ] Clean code and structure code properly
 - [ ] Integrate LLM as an evaluator code into Gradio app
 - [ ] Check groundedness of the RAG in LLM as an evaluator using Groundedness API
+- [ ] Include other types of questions like fill in the blanks
 - [ ] Get LLM explanation on why it choose an answer
 - [ ] Support other languages like Korean
 
