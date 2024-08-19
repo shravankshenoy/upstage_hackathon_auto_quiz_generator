@@ -3,6 +3,7 @@
 Upload any pdf or website, and it will generate questions in a matter of seconds
 
 ## How does it work?
+![AutomaticQuizGenerator](Automatic_Quiz_Generator.png)
 
 
 
