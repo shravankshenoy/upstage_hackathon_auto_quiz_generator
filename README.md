@@ -12,9 +12,9 @@ Upload any pdf or website, and get high quality LLM evaluated MCQ questions with
 ![](https://github.com/shravankshenoy/upstage_hackathon_auto_quiz_generator/blob/main/auto_quiz_generator_from_webpage_demo.gif)
 
 ## How is Upstage API used?
-1. Upstage Document OCR : To extract text from uploaded pdf
-2. Upstage Solar Embedding API : To convert the text to embedding to be used in RAG portion of LLM as an evaluator
-3. Upstage Chat API : Used to generate answer from question (and thus used as evaluator LLM)
+1. **Upstage Document OCR** : To extract text from uploaded pdf
+2. **Upstage Solar Embedding API** : To convert the text to embedding to be used in RAG portion of LLM as an evaluator
+3. **Upstage Chat API** : Used to generate answer from question (and thus used as evaluator LLM)
 
 ## How to run it locally?
 
