@@ -1,0 +1,7 @@
+interest_by_date:
+  - start_date: '2022-01-01'
+    end_date: '2022-01-31'
+    interest: 0.1
+  - start_date: '2022-02-01'
+    end_date: '2022-02-28'
+    interest: 0.2
