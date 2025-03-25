@@ -3,13 +3,13 @@ import argparse
 
 # Set up argument parser
 parser = argparse.ArgumentParser(description="Generate SQL from YAML file")
-parser.add_argument("yaml_file", type=str, help="Path to the YAML file")
+parser.add_argument("--config", type=str, required=True, help="Path to the YAML file")
 
 # Parse arguments
 args = parser.parse_args()
 
 # Read YAML file
-with open(args.yaml_file, "r") as file:
+with open(args.config, "r") as file:
     data = yaml.safe_load(file)
 
 # Start SQL query
