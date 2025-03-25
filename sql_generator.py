@@ -1,17 +1,16 @@
 import yaml
+import argparse
 
-yaml_data = """
-interest_by_date:
-  - start_date: '2022-01-01'
-    end_date: '2022-01-31'
-    interest: 0.1
-  - start_date: '2022-02-01'
-    end_date: '2022-02-28'
-    interest: 0.2
-"""
+# Set up argument parser
+parser = argparse.ArgumentParser(description="Generate SQL from YAML file")
+parser.add_argument("yaml_file", type=str, help="Path to the YAML file")
 
-# Load YAML data
-data = yaml.safe_load(yaml_data)
+# Parse arguments
+args = parser.parse_args()
+
+# Read YAML file
+with open(args.yaml_file, "r") as file:
+    data = yaml.safe_load(file)
 
 # Start SQL query
 sql_query = "SELECT date_column,\n  CASE"
